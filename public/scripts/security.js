@@ -99,7 +99,130 @@ async function api(action, payload = {}) {
   return json.data;
 }
 
-// ===== DB (JSON local via Next API) =====
+const STORAGE_KEY = 'hackcode_browser_data_v1';
+const ADMIN_PASSWORD_HASH = '738326f2d63bd058755adffcd5e71089c56d8bc79af32c3af89ffe712b935e6a';
+const DEFAULT_SITE_CONFIG = {
+  primaryColor: '#00ff00',
+  secondaryColor: '#00ffff',
+  bgColor: '#000000',
+  accentColor: '#ff0040',
+  bootMessage: 'ACESSO AUTORIZADO. BEM-VINDO AO SISTEMA.',
+  matrixEffect: true,
+  scanlinesEffect: true,
+  glitchEffect: true,
+  soundEffect: false
+};
+
+function createFallbackData() {
+  const createdAt = new Date().toISOString();
+  return {
+    users: {
+      carlos: {
+        username: 'carlos',
+        displayName: 'Carlos',
+        avatarUrl: '',
+        preferredLanguages: [],
+        passwordHash: ADMIN_PASSWORD_HASH,
+        role: 'admin',
+        isAdmin: true,
+        xp: 0,
+        completedChallenges: [],
+        achievements: ['admin_power'],
+        banned: false,
+        createdAt
+      }
+    },
+    challenges: [],
+    submissions: [],
+    logs: [],
+    siteConfig: DEFAULT_SITE_CONFIG
+  };
+}
+
+function normalizeData(data = {}) {
+  const fallback = createFallbackData();
+  const users = { ...fallback.users, ...(data.users || {}) };
+
+  users.carlos = {
+    ...fallback.users.carlos,
+    ...(users.carlos || {}),
+    username: 'carlos',
+    displayName: users.carlos?.displayName || 'Carlos',
+    avatarUrl: users.carlos?.avatarUrl || '',
+    preferredLanguages: users.carlos?.preferredLanguages || [],
+    passwordHash: ADMIN_PASSWORD_HASH,
+    role: 'admin',
+    isAdmin: true,
+    banned: false,
+    achievements: Array.from(new Set([...(users.carlos?.achievements || []), 'admin_power']))
+  };
+
+  for (const user of Object.values(users)) {
+    user.username = String(user.username || '').toLowerCase();
+    user.displayName ||= user.username;
+    user.avatarUrl ||= '';
+    user.preferredLanguages ||= [];
+    user.completedChallenges ||= [];
+    user.achievements ||= [];
+    user.role ||= user.isAdmin ? 'admin' : 'user';
+    user.banned = Boolean(user.banned);
+    user.xp ||= 0;
+    user.createdAt ||= new Date().toISOString();
+  }
+
+  return {
+    users,
+    challenges: Array.isArray(data.challenges) ? data.challenges : fallback.challenges,
+    submissions: Array.isArray(data.submissions) ? data.submissions : fallback.submissions,
+    logs: Array.isArray(data.logs) ? data.logs : fallback.logs,
+    siteConfig: { ...DEFAULT_SITE_CONFIG, ...(data.siteConfig || {}) }
+  };
+}
+
+function readStoredData() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? normalizeData(JSON.parse(raw)) : null;
+  } catch (e) {
+    console.error('readStoredData error:', e);
+    return null;
+  }
+}
+
+function writeStoredData(data) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(normalizeData(data)));
+  return true;
+}
+
+async function getBrowserData() {
+  const stored = readStoredData();
+  if (stored) {
+    writeStoredData(stored);
+    return stored;
+  }
+
+  let seeded = null;
+  try {
+    seeded = await fetch('/api/hackcode', { cache: 'no-store' })
+      .then(response => response.json())
+      .then(json => json?.data || null);
+  } catch (e) {
+    console.warn('Seed API indisponível, usando dados mínimos locais:', e);
+  }
+
+  const data = normalizeData(seeded || createFallbackData());
+  writeStoredData(data);
+  return data;
+}
+
+async function updateBrowserData(updater) {
+  const data = await getBrowserData();
+  const result = await updater(data);
+  writeStoredData(data);
+  return result;
+}
+
+// ===== DB (localStorage no navegador; API só semeia os dados iniciais) =====
 export const DB = {
 
   // ── SESSION ──
@@ -130,39 +253,30 @@ export const DB = {
 
   // ── USERS ──
   async getUsers() {
-    try {
-      return await api('getUsers');
-    } catch (e) {
-      console.error('getUsers error:', e);
-      return {};
-    }
+    return (await getBrowserData()).users;
   },
 
   async getUser(username) {
-    try {
-      return await api('getUser', { username });
-    } catch (e) {
-      console.error('getUser error:', e);
-      return null;
-    }
+    const data = await getBrowserData();
+    return data.users[String(username || '').toLowerCase()] || null;
   },
 
   async saveUser(username, data) {
-    try {
-      return await api('saveUser', { username, user: data });
-    } catch (e) {
-      console.error('saveUser error:', e);
-      return false;
-    }
+    return updateBrowserData(store => {
+      const key = String(username || data?.username || '').toLowerCase();
+      if (!key) return false;
+      store.users[key] = { ...data, username: key };
+      return true;
+    });
   },
 
   async deleteUser(username) {
-    try {
-      return await api('deleteUser', { username });
-    } catch (e) {
-      console.error('deleteUser error:', e);
-      return false;
-    }
+    return updateBrowserData(store => {
+      const key = String(username || '').toLowerCase();
+      if (!key || key === 'carlos') return false;
+      delete store.users[key];
+      return true;
+    });
   },
 
   async getCurrentUser() {
@@ -173,122 +287,91 @@ export const DB = {
 
   // ── CHALLENGES ──
   async getChallenges() {
-    try {
-      return await api('getChallenges');
-    } catch (e) {
-      console.error('getChallenges error:', e);
-      return [];
-    }
+    const data = await getBrowserData();
+    return [...data.challenges].sort((a, b) => a.id - b.id);
   },
 
   async saveChallenges(challenges) {
-    try {
-      return await api('saveChallenges', { challenges });
-    } catch (e) {
-      console.error('saveChallenges error:', e);
-      return false;
-    }
+    return updateBrowserData(store => {
+      store.challenges = Array.isArray(challenges) ? challenges : store.challenges;
+      return true;
+    });
   },
 
   async saveChallenge(ch) {
-    try {
-      return await api('saveChallenge', { challenge: ch });
-    } catch (e) {
-      console.error('saveChallenge error:', e);
-      return false;
-    }
+    return updateBrowserData(store => {
+      if (!ch || typeof ch.id !== 'number') return false;
+      const idx = store.challenges.findIndex(item => item.id === ch.id);
+      if (idx >= 0) store.challenges[idx] = ch;
+      else store.challenges.push(ch);
+      store.challenges.sort((a, b) => a.id - b.id);
+      return true;
+    });
   },
 
   async deleteChallenge(id) {
-    try {
-      return await api('deleteChallenge', { id });
-    } catch (e) {
-      console.error('deleteChallenge error:', e);
-      return false;
-    }
+    return updateBrowserData(store => {
+      store.challenges = store.challenges.filter(item => item.id !== Number(id));
+      return true;
+    });
   },
 
   // ── SUBMISSIONS ──
   async addSubmission(username, challengeId, status, code) {
-    try {
-      return await api('addSubmission', { username, challengeId, status, code });
-    } catch (e) {
-      console.error('addSubmission error:', e);
-      return { id: Date.now(), username, challengeId, status, time: new Date().toISOString() };
-    }
+    return updateBrowserData(store => {
+      const submission = {
+        id: Date.now(),
+        username: String(username || '').toLowerCase(),
+        challengeId: Number(challengeId),
+        status,
+        time: new Date().toISOString(),
+        codeLength: String(code || '').length
+      };
+      store.submissions.unshift(submission);
+      store.submissions = store.submissions.slice(0, 500);
+      return submission;
+    });
   },
 
   async getSubmissions() {
-    try {
-      return await api('getSubmissions');
-    } catch (e) {
-      console.error('getSubmissions error:', e);
-      return [];
-    }
+    return (await getBrowserData()).submissions.slice(0, 500);
   },
 
   async getUserSubmissions(username) {
-    try {
-      return await api('getUserSubmissions', { username });
-    } catch (e) {
-      console.error('getUserSubmissions error:', e);
-      return [];
-    }
+    const key = String(username || '').toLowerCase();
+    return (await getBrowserData()).submissions.filter(item => item.username === key).slice(0, 50);
   },
 
   // ── LOGS ──
   async addLog(level, msg) {
-    try {
-      await api('addLog', { level, msg });
-    } catch (e) {
-      // Silently fail — logs são não-críticos
-    }
+    await updateBrowserData(store => {
+      store.logs.unshift({ id: Date.now(), time: new Date().toISOString(), level, msg });
+      store.logs = store.logs.slice(0, 500);
+      return true;
+    });
   },
 
   async getLogs() {
-    try {
-      return await api('getLogs');
-    } catch (e) {
-      console.error('getLogs error:', e);
-      return [];
-    }
+    return (await getBrowserData()).logs.slice(0, 500);
   },
 
   async clearLogs() {
-    try {
-      await api('clearLogs');
-    } catch (e) {
-      console.error('clearLogs error:', e);
-    }
+    await updateBrowserData(store => {
+      store.logs = [];
+      return true;
+    });
   },
 
   // ── SITE CONFIG ──
   async getSiteConfig() {
-    const defaults = {
-      primaryColor: '#00ff00',
-      secondaryColor: '#00ffff',
-      bgColor: '#000000',
-      accentColor: '#ff0040',
-      bootMessage: 'ACESSO AUTORIZADO. BEM-VINDO AO SISTEMA.',
-      matrixEffect: true,
-      scanlinesEffect: true,
-      glitchEffect: true,
-      soundEffect: false
-    };
-    try {
-      return { ...defaults, ...(await api('getSiteConfig')) };
-    } catch (e) {
-      return defaults;
-    }
+    return (await getBrowserData()).siteConfig;
   },
 
   async saveSiteConfig(cfg) {
-    try {
-      return await api('saveSiteConfig', { config: cfg });
-    } catch (e) {
-      console.error('saveSiteConfig error:', e);
-      return false;
-    }
+    return updateBrowserData(store => {
+      store.siteConfig = { ...store.siteConfig, ...(cfg || {}) };
+      return true;
+    });
   },
 
   // ── DRAFT ──

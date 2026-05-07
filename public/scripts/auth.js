@@ -175,7 +175,7 @@ window.handleRegister = async function() {
   };
 
   const saved = await DB.saveUser(username, newUser);
-  if (!saved) { showError(errorEl, 'Erro ao criar conta. Verifique o servidor local e tente novamente.'); return; }
+  if (!saved) { showError(errorEl, 'Erro ao criar conta. Tente novamente neste navegador.'); return; }
 
   await DB.addLog('info', `Novo usuário: ${username}`);
   successEl.textContent = '✓ Conta criada! Faça login agora.';

@@ -76,7 +76,7 @@ function createDefaultData(): HackcodeData {
       carlos: {
         username: 'carlos',
         displayName: 'Carlos',
-        passwordHash: '5449691c6104f88f42d12d87f471b87bf2ba777442ccaa3e7b7079090431478d',
+        passwordHash: '738326f2d63bd058755adffcd5e71089c56d8bc79af32c3af89ffe712b935e6a',
         role: 'admin',
         isAdmin: true,
         xp: 0,
