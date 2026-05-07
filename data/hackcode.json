@@ -1,0 +1,2866 @@
+{
+  "users": {
+    "carlos": {
+      "username": "carlos",
+      "displayName": "Carlos",
+      "passwordHash": "5449691c6104f88f42d12d87f471b87bf2ba777442ccaa3e7b7079090431478d",
+      "role": "admin",
+      "isAdmin": true,
+      "xp": 50,
+      "completedChallenges": [
+        1
+      ],
+      "achievements": [
+        "admin_power",
+        "first_solve",
+        "first_login"
+      ],
+      "banned": false,
+      "createdAt": "2026-05-06T05:18:12.809Z",
+      "avatarUrl": "",
+      "preferredLanguages": []
+    }
+  },
+  "challenges": [
+    {
+      "id": 1,
+      "title": "Olá, Mundo Dev em JavaScript",
+      "difficulty": "easy",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para retornar uma string fixa. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "hello()",
+      "outputExample": "\"Hello, World!\"",
+      "starterCode": "function hello() {\n  // Implemente: retornar uma string fixa\n}",
+      "testCases": [
+        {
+          "input": "hello()",
+          "expected": "Hello, World!"
+        }
+      ],
+      "hints": [
+        "Use return",
+        "Strings podem usar aspas simples ou duplas"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Soma Dois Números em TypeScript",
+      "difficulty": "easy",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para somar dois argumentos numéricos. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "soma(5, 3)",
+      "outputExample": "8",
+      "starterCode": "export function soma(entrada: unknown): unknown {\n  // Implemente: somar dois argumentos numéricos\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Use o operador +",
+        "Retorne o resultado"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "Par ou Ímpar em C++",
+      "difficulty": "easy",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para identificar se um número é par ou ímpar. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "parOuImpar(7)",
+      "outputExample": "\"impar\"",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para identificar se um número é par ou ímpar.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": "Maior Número em C#",
+      "difficulty": "easy",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para retornar o maior valor de uma lista. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "maiorNumero([2, 9, 4])",
+      "outputExample": "9",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para retornar o maior valor de uma lista.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": "Contador de Vogais em Java",
+      "difficulty": "easy",
+      "language": "java",
+      "description": "Resolva um exercício de Java para contar vogais em uma string. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "contarVogais(\"desenvolvimento\")",
+      "outputExample": "6",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para contar vogais em uma string.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "title": "Formulário Acessível com CSS",
+      "difficulty": "easy",
+      "language": "css",
+      "description": "Crie estilos CSS para formulário acessível com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".form-field",
+      "outputExample": "Use label, input, focus",
+      "starterCode": ".form-field {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          "label",
+          "input",
+          "focus"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "title": "Fatorial em JavaScript",
+      "difficulty": "easy",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para calcular o fatorial de um número. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "fatorial(5)",
+      "outputExample": "120",
+      "starterCode": "function fatorial() {\n  // Implemente: calcular o fatorial de um número\n}",
+      "testCases": [
+        {
+          "input": "fatorial(0)",
+          "expected": "1"
+        },
+        {
+          "input": "fatorial(5)",
+          "expected": "120"
+        }
+      ],
+      "hints": [
+        "0! é 1",
+        "Pode ser feito com loop ou recursão"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Busca Binária em TypeScript",
+      "difficulty": "easy",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para buscar um valor em array ordenado. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "buscaBinaria([1,3,5,7], 5)",
+      "outputExample": "2",
+      "starterCode": "export function buscaBinaria(entrada: unknown): unknown {\n  // Implemente: buscar um valor em array ordenado\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Use left/right/mid",
+        "Reduza o intervalo a cada passo"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "title": "Agrupar por Chave em C++",
+      "difficulty": "easy",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para agrupar objetos por uma propriedade. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(agruparPor([{tipo:\"a\"},{tipo:\"b\"},{tipo:\"a\"}], \"tipo\"))",
+      "outputExample": "{\"a\":[{\"tipo\":\"a\"},{\"tipo\":\"a\"}],\"b\":[{\"tipo\":\"b\"}]}",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para agrupar objetos por uma propriedade.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "title": "Cache LRU Simplificado em C#",
+      "difficulty": "easy",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para simular uma política de cache com limite. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(lru([\"A\",\"B\",\"A\",\"C\"], 2))",
+      "outputExample": "[\"A\",\"C\"]",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para simular uma política de cache com limite.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "title": "Olá, Mundo Dev em Java",
+      "difficulty": "easy",
+      "language": "java",
+      "description": "Resolva um exercício de Java para retornar uma string fixa. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "hello()",
+      "outputExample": "\"Hello, World!\"",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para retornar uma string fixa.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "title": "Botão com Estado Hover com CSS",
+      "difficulty": "easy",
+      "language": "css",
+      "description": "Crie estilos CSS para botão com estado hover com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".button",
+      "outputExample": "Use :hover, transition, background",
+      "starterCode": ".button {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          ":hover",
+          "transition",
+          "background"
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "title": "Par ou Ímpar em JavaScript",
+      "difficulty": "easy",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para identificar se um número é par ou ímpar. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "parOuImpar(7)",
+      "outputExample": "\"impar\"",
+      "starterCode": "function parOuImpar() {\n  // Implemente: identificar se um número é par ou ímpar\n}",
+      "testCases": [
+        {
+          "input": "parOuImpar(4)",
+          "expected": "par"
+        },
+        {
+          "input": "parOuImpar(7)",
+          "expected": "impar"
+        }
+      ],
+      "hints": [
+        "Use o operador %",
+        "n % 2 === 0 indica número par"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Maior Número em TypeScript",
+      "difficulty": "easy",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para retornar o maior valor de uma lista. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "maiorNumero([2, 9, 4])",
+      "outputExample": "9",
+      "starterCode": "export function maiorNumero(entrada: unknown): unknown {\n  // Implemente: retornar o maior valor de uma lista\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Percorra o array",
+        "Compare cada item com o maior atual"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "title": "Contador de Vogais em C++",
+      "difficulty": "easy",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para contar vogais em uma string. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "contarVogais(\"desenvolvimento\")",
+      "outputExample": "6",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para contar vogais em uma string.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "title": "Palíndromo em C#",
+      "difficulty": "easy",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para verificar se uma string lida igual de trás para frente. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "isPalindromo(\"radar\")",
+      "outputExample": "true",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para verificar se uma string lida igual de trás para frente.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "title": "Fatorial em Java",
+      "difficulty": "easy",
+      "language": "java",
+      "description": "Resolva um exercício de Java para calcular o fatorial de um número. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "fatorial(5)",
+      "outputExample": "120",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para calcular o fatorial de um número.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "title": "Painel de Métricas com CSS",
+      "difficulty": "easy",
+      "language": "css",
+      "description": "Crie estilos CSS para painel de métricas com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".metric-card",
+      "outputExample": "Use display, align-items, gap",
+      "starterCode": ".metric-card {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          "display",
+          "align-items",
+          "gap"
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "title": "Agrupar por Chave em JavaScript",
+      "difficulty": "easy",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para agrupar objetos por uma propriedade. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(agruparPor([{tipo:\"a\"},{tipo:\"b\"},{tipo:\"a\"}], \"tipo\"))",
+      "outputExample": "{\"a\":[{\"tipo\":\"a\"},{\"tipo\":\"a\"}],\"b\":[{\"tipo\":\"b\"}]}",
+      "starterCode": "function agruparPor() {\n  // Implemente: agrupar objetos por uma propriedade\n}",
+      "testCases": [
+        {
+          "input": "JSON.stringify(agruparPor([{tipo:\"a\"},{tipo:\"b\"},{tipo:\"a\"}], \"tipo\"))",
+          "expected": "{\"a\":[{\"tipo\":\"a\"},{\"tipo\":\"a\"}],\"b\":[{\"tipo\":\"b\"}]}"
+        }
+      ],
+      "hints": [
+        "Use objeto acumulador",
+        "Crie o array quando a chave ainda não existir"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Cache LRU Simplificado em TypeScript",
+      "difficulty": "easy",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para simular uma política de cache com limite. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(lru([\"A\",\"B\",\"A\",\"C\"], 2))",
+      "outputExample": "[\"A\",\"C\"]",
+      "starterCode": "export function lru(entrada: unknown): unknown {\n  // Implemente: simular uma política de cache com limite\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Ao acessar um item, mova-o para o final",
+        "Remova o mais antigo quando passar do limite"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "title": "Olá, Mundo Dev em C++",
+      "difficulty": "easy",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para retornar uma string fixa. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "hello()",
+      "outputExample": "\"Hello, World!\"",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para retornar uma string fixa.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "title": "Soma Dois Números em C#",
+      "difficulty": "easy",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para somar dois argumentos numéricos. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "soma(5, 3)",
+      "outputExample": "8",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para somar dois argumentos numéricos.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "title": "Par ou Ímpar em Java",
+      "difficulty": "easy",
+      "language": "java",
+      "description": "Resolva um exercício de Java para identificar se um número é par ou ímpar. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "parOuImpar(7)",
+      "outputExample": "\"impar\"",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para identificar se um número é par ou ímpar.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "title": "Navbar Fixa com CSS",
+      "difficulty": "easy",
+      "language": "css",
+      "description": "Crie estilos CSS para navbar fixa com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".navbar",
+      "outputExample": "Use position: sticky, top, z-index",
+      "starterCode": ".navbar {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          "position: sticky",
+          "top",
+          "z-index"
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "title": "Contador de Vogais em JavaScript",
+      "difficulty": "easy",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para contar vogais em uma string. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "contarVogais(\"desenvolvimento\")",
+      "outputExample": "6",
+      "starterCode": "function contarVogais() {\n  // Implemente: contar vogais em uma string\n}",
+      "testCases": [
+        {
+          "input": "contarVogais(\"desenvolvimento\")",
+          "expected": "6"
+        },
+        {
+          "input": "contarVogais(\"xyz\")",
+          "expected": "0"
+        }
+      ],
+      "hints": [
+        "Normalize para minúsculas",
+        "Verifique se cada caractere está em aeiou"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 26,
+      "title": "Palíndromo em TypeScript",
+      "difficulty": "easy",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para verificar se uma string lida igual de trás para frente. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "isPalindromo(\"radar\")",
+      "outputExample": "true",
+      "starterCode": "export function isPalindromo(entrada: unknown): unknown {\n  // Implemente: verificar se uma string lida igual de trás para frente\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Normalize a string",
+        "Compare com a versão invertida"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "title": "Fatorial em C++",
+      "difficulty": "easy",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para calcular o fatorial de um número. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "fatorial(5)",
+      "outputExample": "120",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para calcular o fatorial de um número.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "title": "Busca Binária em C#",
+      "difficulty": "easy",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para buscar um valor em array ordenado. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "buscaBinaria([1,3,5,7], 5)",
+      "outputExample": "2",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para buscar um valor em array ordenado.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "title": "Agrupar por Chave em Java",
+      "difficulty": "easy",
+      "language": "java",
+      "description": "Resolva um exercício de Java para agrupar objetos por uma propriedade. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(agruparPor([{tipo:\"a\"},{tipo:\"b\"},{tipo:\"a\"}], \"tipo\"))",
+      "outputExample": "{\"a\":[{\"tipo\":\"a\"},{\"tipo\":\"a\"}],\"b\":[{\"tipo\":\"b\"}]}",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para agrupar objetos por uma propriedade.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "title": "Animação Sutil de Entrada com CSS",
+      "difficulty": "easy",
+      "language": "css",
+      "description": "Crie estilos CSS para animação sutil de entrada com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".fade-in",
+      "outputExample": "Use @keyframes, opacity, transform",
+      "starterCode": ".fade-in {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          "@keyframes",
+          "opacity",
+          "transform"
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "title": "Olá, Mundo Dev em JavaScript",
+      "difficulty": "easy",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para retornar uma string fixa. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "hello()",
+      "outputExample": "\"Hello, World!\"",
+      "starterCode": "function hello() {\n  // Implemente: retornar uma string fixa\n}",
+      "testCases": [
+        {
+          "input": "hello()",
+          "expected": "Hello, World!"
+        }
+      ],
+      "hints": [
+        "Use return",
+        "Strings podem usar aspas simples ou duplas"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 32,
+      "title": "Soma Dois Números em TypeScript",
+      "difficulty": "easy",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para somar dois argumentos numéricos. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "soma(5, 3)",
+      "outputExample": "8",
+      "starterCode": "export function soma(entrada: unknown): unknown {\n  // Implemente: somar dois argumentos numéricos\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Use o operador +",
+        "Retorne o resultado"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "title": "Par ou Ímpar em C++",
+      "difficulty": "easy",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para identificar se um número é par ou ímpar. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "parOuImpar(7)",
+      "outputExample": "\"impar\"",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para identificar se um número é par ou ímpar.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "title": "Maior Número em C#",
+      "difficulty": "easy",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para retornar o maior valor de uma lista. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "maiorNumero([2, 9, 4])",
+      "outputExample": "9",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para retornar o maior valor de uma lista.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "title": "Contador de Vogais em Java",
+      "difficulty": "easy",
+      "language": "java",
+      "description": "Resolva um exercício de Java para contar vogais em uma string. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "contarVogais(\"desenvolvimento\")",
+      "outputExample": "6",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para contar vogais em uma string.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "title": "Formulário Acessível com CSS",
+      "difficulty": "easy",
+      "language": "css",
+      "description": "Crie estilos CSS para formulário acessível com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".form-field",
+      "outputExample": "Use label, input, focus",
+      "starterCode": ".form-field {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          "label",
+          "input",
+          "focus"
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "title": "Fatorial em JavaScript",
+      "difficulty": "easy",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para calcular o fatorial de um número. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "fatorial(5)",
+      "outputExample": "120",
+      "starterCode": "function fatorial() {\n  // Implemente: calcular o fatorial de um número\n}",
+      "testCases": [
+        {
+          "input": "fatorial(0)",
+          "expected": "1"
+        },
+        {
+          "input": "fatorial(5)",
+          "expected": "120"
+        }
+      ],
+      "hints": [
+        "0! é 1",
+        "Pode ser feito com loop ou recursão"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 38,
+      "title": "Busca Binária em TypeScript",
+      "difficulty": "easy",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para buscar um valor em array ordenado. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "buscaBinaria([1,3,5,7], 5)",
+      "outputExample": "2",
+      "starterCode": "export function buscaBinaria(entrada: unknown): unknown {\n  // Implemente: buscar um valor em array ordenado\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Use left/right/mid",
+        "Reduza o intervalo a cada passo"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "title": "Agrupar por Chave em C++",
+      "difficulty": "easy",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para agrupar objetos por uma propriedade. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(agruparPor([{tipo:\"a\"},{tipo:\"b\"},{tipo:\"a\"}], \"tipo\"))",
+      "outputExample": "{\"a\":[{\"tipo\":\"a\"},{\"tipo\":\"a\"}],\"b\":[{\"tipo\":\"b\"}]}",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para agrupar objetos por uma propriedade.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "title": "Cache LRU Simplificado em C#",
+      "difficulty": "easy",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para simular uma política de cache com limite. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(lru([\"A\",\"B\",\"A\",\"C\"], 2))",
+      "outputExample": "[\"A\",\"C\"]",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para simular uma política de cache com limite.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "title": "Olá, Mundo Dev em Java",
+      "difficulty": "easy",
+      "language": "java",
+      "description": "Resolva um exercício de Java para retornar uma string fixa. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "hello()",
+      "outputExample": "\"Hello, World!\"",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para retornar uma string fixa.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "title": "Botão com Estado Hover com CSS",
+      "difficulty": "easy",
+      "language": "css",
+      "description": "Crie estilos CSS para botão com estado hover com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".button",
+      "outputExample": "Use :hover, transition, background",
+      "starterCode": ".button {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          ":hover",
+          "transition",
+          "background"
+        ]
+      }
+    },
+    {
+      "id": 43,
+      "title": "Par ou Ímpar em JavaScript",
+      "difficulty": "easy",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para identificar se um número é par ou ímpar. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "parOuImpar(7)",
+      "outputExample": "\"impar\"",
+      "starterCode": "function parOuImpar() {\n  // Implemente: identificar se um número é par ou ímpar\n}",
+      "testCases": [
+        {
+          "input": "parOuImpar(4)",
+          "expected": "par"
+        },
+        {
+          "input": "parOuImpar(7)",
+          "expected": "impar"
+        }
+      ],
+      "hints": [
+        "Use o operador %",
+        "n % 2 === 0 indica número par"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 44,
+      "title": "Maior Número em TypeScript",
+      "difficulty": "easy",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para retornar o maior valor de uma lista. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "maiorNumero([2, 9, 4])",
+      "outputExample": "9",
+      "starterCode": "export function maiorNumero(entrada: unknown): unknown {\n  // Implemente: retornar o maior valor de uma lista\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Percorra o array",
+        "Compare cada item com o maior atual"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 45,
+      "title": "Contador de Vogais em C++",
+      "difficulty": "easy",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para contar vogais em uma string. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "contarVogais(\"desenvolvimento\")",
+      "outputExample": "6",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para contar vogais em uma string.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 80,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "title": "Palíndromo em C#",
+      "difficulty": "hard",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para verificar se uma string lida igual de trás para frente. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "isPalindromo(\"radar\")",
+      "outputExample": "true",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para verificar se uma string lida igual de trás para frente.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "title": "Fatorial em Java",
+      "difficulty": "hard",
+      "language": "java",
+      "description": "Resolva um exercício de Java para calcular o fatorial de um número. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "fatorial(5)",
+      "outputExample": "120",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para calcular o fatorial de um número.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "title": "Painel de Métricas com CSS",
+      "difficulty": "hard",
+      "language": "css",
+      "description": "Crie estilos CSS para painel de métricas com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".metric-card",
+      "outputExample": "Use display, align-items, gap",
+      "starterCode": ".metric-card {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          "display",
+          "align-items",
+          "gap"
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "title": "Agrupar por Chave em JavaScript",
+      "difficulty": "hard",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para agrupar objetos por uma propriedade. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(agruparPor([{tipo:\"a\"},{tipo:\"b\"},{tipo:\"a\"}], \"tipo\"))",
+      "outputExample": "{\"a\":[{\"tipo\":\"a\"},{\"tipo\":\"a\"}],\"b\":[{\"tipo\":\"b\"}]}",
+      "starterCode": "function agruparPor() {\n  // Implemente: agrupar objetos por uma propriedade\n}",
+      "testCases": [
+        {
+          "input": "JSON.stringify(agruparPor([{tipo:\"a\"},{tipo:\"b\"},{tipo:\"a\"}], \"tipo\"))",
+          "expected": "{\"a\":[{\"tipo\":\"a\"},{\"tipo\":\"a\"}],\"b\":[{\"tipo\":\"b\"}]}"
+        }
+      ],
+      "hints": [
+        "Use objeto acumulador",
+        "Crie o array quando a chave ainda não existir"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 50,
+      "title": "Cache LRU Simplificado em TypeScript",
+      "difficulty": "hard",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para simular uma política de cache com limite. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(lru([\"A\",\"B\",\"A\",\"C\"], 2))",
+      "outputExample": "[\"A\",\"C\"]",
+      "starterCode": "export function lru(entrada: unknown): unknown {\n  // Implemente: simular uma política de cache com limite\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Ao acessar um item, mova-o para o final",
+        "Remova o mais antigo quando passar do limite"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 51,
+      "title": "Olá, Mundo Dev em C++",
+      "difficulty": "hard",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para retornar uma string fixa. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "hello()",
+      "outputExample": "\"Hello, World!\"",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para retornar uma string fixa.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 52,
+      "title": "Soma Dois Números em C#",
+      "difficulty": "hard",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para somar dois argumentos numéricos. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "soma(5, 3)",
+      "outputExample": "8",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para somar dois argumentos numéricos.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 53,
+      "title": "Par ou Ímpar em Java",
+      "difficulty": "hard",
+      "language": "java",
+      "description": "Resolva um exercício de Java para identificar se um número é par ou ímpar. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "parOuImpar(7)",
+      "outputExample": "\"impar\"",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para identificar se um número é par ou ímpar.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 54,
+      "title": "Navbar Fixa com CSS",
+      "difficulty": "hard",
+      "language": "css",
+      "description": "Crie estilos CSS para navbar fixa com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".navbar",
+      "outputExample": "Use position: sticky, top, z-index",
+      "starterCode": ".navbar {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          "position: sticky",
+          "top",
+          "z-index"
+        ]
+      }
+    },
+    {
+      "id": 55,
+      "title": "Contador de Vogais em JavaScript",
+      "difficulty": "hard",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para contar vogais em uma string. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "contarVogais(\"desenvolvimento\")",
+      "outputExample": "6",
+      "starterCode": "function contarVogais() {\n  // Implemente: contar vogais em uma string\n}",
+      "testCases": [
+        {
+          "input": "contarVogais(\"desenvolvimento\")",
+          "expected": "6"
+        },
+        {
+          "input": "contarVogais(\"xyz\")",
+          "expected": "0"
+        }
+      ],
+      "hints": [
+        "Normalize para minúsculas",
+        "Verifique se cada caractere está em aeiou"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 56,
+      "title": "Palíndromo em TypeScript",
+      "difficulty": "hard",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para verificar se uma string lida igual de trás para frente. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "isPalindromo(\"radar\")",
+      "outputExample": "true",
+      "starterCode": "export function isPalindromo(entrada: unknown): unknown {\n  // Implemente: verificar se uma string lida igual de trás para frente\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Normalize a string",
+        "Compare com a versão invertida"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 57,
+      "title": "Fatorial em C++",
+      "difficulty": "hard",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para calcular o fatorial de um número. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "fatorial(5)",
+      "outputExample": "120",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para calcular o fatorial de um número.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 58,
+      "title": "Busca Binária em C#",
+      "difficulty": "hard",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para buscar um valor em array ordenado. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "buscaBinaria([1,3,5,7], 5)",
+      "outputExample": "2",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para buscar um valor em array ordenado.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 59,
+      "title": "Agrupar por Chave em Java",
+      "difficulty": "hard",
+      "language": "java",
+      "description": "Resolva um exercício de Java para agrupar objetos por uma propriedade. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(agruparPor([{tipo:\"a\"},{tipo:\"b\"},{tipo:\"a\"}], \"tipo\"))",
+      "outputExample": "{\"a\":[{\"tipo\":\"a\"},{\"tipo\":\"a\"}],\"b\":[{\"tipo\":\"b\"}]}",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para agrupar objetos por uma propriedade.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 60,
+      "title": "Animação Sutil de Entrada com CSS",
+      "difficulty": "hard",
+      "language": "css",
+      "description": "Crie estilos CSS para animação sutil de entrada com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".fade-in",
+      "outputExample": "Use @keyframes, opacity, transform",
+      "starterCode": ".fade-in {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          "@keyframes",
+          "opacity",
+          "transform"
+        ]
+      }
+    },
+    {
+      "id": 61,
+      "title": "Olá, Mundo Dev em JavaScript",
+      "difficulty": "hard",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para retornar uma string fixa. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "hello()",
+      "outputExample": "\"Hello, World!\"",
+      "starterCode": "function hello() {\n  // Implemente: retornar uma string fixa\n}",
+      "testCases": [
+        {
+          "input": "hello()",
+          "expected": "Hello, World!"
+        }
+      ],
+      "hints": [
+        "Use return",
+        "Strings podem usar aspas simples ou duplas"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 62,
+      "title": "Soma Dois Números em TypeScript",
+      "difficulty": "hard",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para somar dois argumentos numéricos. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "soma(5, 3)",
+      "outputExample": "8",
+      "starterCode": "export function soma(entrada: unknown): unknown {\n  // Implemente: somar dois argumentos numéricos\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Use o operador +",
+        "Retorne o resultado"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 63,
+      "title": "Par ou Ímpar em C++",
+      "difficulty": "hard",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para identificar se um número é par ou ímpar. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "parOuImpar(7)",
+      "outputExample": "\"impar\"",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para identificar se um número é par ou ímpar.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 64,
+      "title": "Maior Número em C#",
+      "difficulty": "hard",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para retornar o maior valor de uma lista. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "maiorNumero([2, 9, 4])",
+      "outputExample": "9",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para retornar o maior valor de uma lista.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 65,
+      "title": "Contador de Vogais em Java",
+      "difficulty": "hard",
+      "language": "java",
+      "description": "Resolva um exercício de Java para contar vogais em uma string. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "contarVogais(\"desenvolvimento\")",
+      "outputExample": "6",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para contar vogais em uma string.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 66,
+      "title": "Formulário Acessível com CSS",
+      "difficulty": "hard",
+      "language": "css",
+      "description": "Crie estilos CSS para formulário acessível com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".form-field",
+      "outputExample": "Use label, input, focus",
+      "starterCode": ".form-field {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          "label",
+          "input",
+          "focus"
+        ]
+      }
+    },
+    {
+      "id": 67,
+      "title": "Fatorial em JavaScript",
+      "difficulty": "hard",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para calcular o fatorial de um número. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "fatorial(5)",
+      "outputExample": "120",
+      "starterCode": "function fatorial() {\n  // Implemente: calcular o fatorial de um número\n}",
+      "testCases": [
+        {
+          "input": "fatorial(0)",
+          "expected": "1"
+        },
+        {
+          "input": "fatorial(5)",
+          "expected": "120"
+        }
+      ],
+      "hints": [
+        "0! é 1",
+        "Pode ser feito com loop ou recursão"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 68,
+      "title": "Busca Binária em TypeScript",
+      "difficulty": "hard",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para buscar um valor em array ordenado. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "buscaBinaria([1,3,5,7], 5)",
+      "outputExample": "2",
+      "starterCode": "export function buscaBinaria(entrada: unknown): unknown {\n  // Implemente: buscar um valor em array ordenado\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Use left/right/mid",
+        "Reduza o intervalo a cada passo"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 69,
+      "title": "Agrupar por Chave em C++",
+      "difficulty": "hard",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para agrupar objetos por uma propriedade. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(agruparPor([{tipo:\"a\"},{tipo:\"b\"},{tipo:\"a\"}], \"tipo\"))",
+      "outputExample": "{\"a\":[{\"tipo\":\"a\"},{\"tipo\":\"a\"}],\"b\":[{\"tipo\":\"b\"}]}",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para agrupar objetos por uma propriedade.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 70,
+      "title": "Cache LRU Simplificado em C#",
+      "difficulty": "hard",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para simular uma política de cache com limite. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(lru([\"A\",\"B\",\"A\",\"C\"], 2))",
+      "outputExample": "[\"A\",\"C\"]",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para simular uma política de cache com limite.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 71,
+      "title": "Olá, Mundo Dev em Java",
+      "difficulty": "hard",
+      "language": "java",
+      "description": "Resolva um exercício de Java para retornar uma string fixa. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "hello()",
+      "outputExample": "\"Hello, World!\"",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para retornar uma string fixa.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 72,
+      "title": "Botão com Estado Hover com CSS",
+      "difficulty": "hard",
+      "language": "css",
+      "description": "Crie estilos CSS para botão com estado hover com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".button",
+      "outputExample": "Use :hover, transition, background",
+      "starterCode": ".button {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          ":hover",
+          "transition",
+          "background"
+        ]
+      }
+    },
+    {
+      "id": 73,
+      "title": "Par ou Ímpar em JavaScript",
+      "difficulty": "hard",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para identificar se um número é par ou ímpar. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "parOuImpar(7)",
+      "outputExample": "\"impar\"",
+      "starterCode": "function parOuImpar() {\n  // Implemente: identificar se um número é par ou ímpar\n}",
+      "testCases": [
+        {
+          "input": "parOuImpar(4)",
+          "expected": "par"
+        },
+        {
+          "input": "parOuImpar(7)",
+          "expected": "impar"
+        }
+      ],
+      "hints": [
+        "Use o operador %",
+        "n % 2 === 0 indica número par"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 74,
+      "title": "Maior Número em TypeScript",
+      "difficulty": "hard",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para retornar o maior valor de uma lista. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "maiorNumero([2, 9, 4])",
+      "outputExample": "9",
+      "starterCode": "export function maiorNumero(entrada: unknown): unknown {\n  // Implemente: retornar o maior valor de uma lista\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Percorra o array",
+        "Compare cada item com o maior atual"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 75,
+      "title": "Contador de Vogais em C++",
+      "difficulty": "hard",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para contar vogais em uma string. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "contarVogais(\"desenvolvimento\")",
+      "outputExample": "6",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para contar vogais em uma string.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 220,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 76,
+      "title": "Palíndromo em C#",
+      "difficulty": "complex",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para verificar se uma string lida igual de trás para frente. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "isPalindromo(\"radar\")",
+      "outputExample": "true",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para verificar se uma string lida igual de trás para frente.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 77,
+      "title": "Fatorial em Java",
+      "difficulty": "complex",
+      "language": "java",
+      "description": "Resolva um exercício de Java para calcular o fatorial de um número. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "fatorial(5)",
+      "outputExample": "120",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para calcular o fatorial de um número.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 78,
+      "title": "Painel de Métricas com CSS",
+      "difficulty": "complex",
+      "language": "css",
+      "description": "Crie estilos CSS para painel de métricas com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".metric-card",
+      "outputExample": "Use display, align-items, gap",
+      "starterCode": ".metric-card {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          "display",
+          "align-items",
+          "gap"
+        ]
+      }
+    },
+    {
+      "id": 79,
+      "title": "Agrupar por Chave em JavaScript",
+      "difficulty": "complex",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para agrupar objetos por uma propriedade. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(agruparPor([{tipo:\"a\"},{tipo:\"b\"},{tipo:\"a\"}], \"tipo\"))",
+      "outputExample": "{\"a\":[{\"tipo\":\"a\"},{\"tipo\":\"a\"}],\"b\":[{\"tipo\":\"b\"}]}",
+      "starterCode": "function agruparPor() {\n  // Implemente: agrupar objetos por uma propriedade\n}",
+      "testCases": [
+        {
+          "input": "JSON.stringify(agruparPor([{tipo:\"a\"},{tipo:\"b\"},{tipo:\"a\"}], \"tipo\"))",
+          "expected": "{\"a\":[{\"tipo\":\"a\"},{\"tipo\":\"a\"}],\"b\":[{\"tipo\":\"b\"}]}"
+        }
+      ],
+      "hints": [
+        "Use objeto acumulador",
+        "Crie o array quando a chave ainda não existir"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 80,
+      "title": "Cache LRU Simplificado em TypeScript",
+      "difficulty": "complex",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para simular uma política de cache com limite. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(lru([\"A\",\"B\",\"A\",\"C\"], 2))",
+      "outputExample": "[\"A\",\"C\"]",
+      "starterCode": "export function lru(entrada: unknown): unknown {\n  // Implemente: simular uma política de cache com limite\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Ao acessar um item, mova-o para o final",
+        "Remova o mais antigo quando passar do limite"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 81,
+      "title": "Olá, Mundo Dev em C++",
+      "difficulty": "complex",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para retornar uma string fixa. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "hello()",
+      "outputExample": "\"Hello, World!\"",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para retornar uma string fixa.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 82,
+      "title": "Soma Dois Números em C#",
+      "difficulty": "complex",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para somar dois argumentos numéricos. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "soma(5, 3)",
+      "outputExample": "8",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para somar dois argumentos numéricos.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 83,
+      "title": "Par ou Ímpar em Java",
+      "difficulty": "complex",
+      "language": "java",
+      "description": "Resolva um exercício de Java para identificar se um número é par ou ímpar. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "parOuImpar(7)",
+      "outputExample": "\"impar\"",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para identificar se um número é par ou ímpar.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 84,
+      "title": "Navbar Fixa com CSS",
+      "difficulty": "complex",
+      "language": "css",
+      "description": "Crie estilos CSS para navbar fixa com atenção a responsividade, espaçamento e acabamento visual.",
+      "inputExample": ".navbar",
+      "outputExample": "Use position: sticky, top, z-index",
+      "starterCode": ".navbar {\n  /* ajuste o visual aqui */\n}\n",
+      "testCases": [],
+      "hints": [
+        "Use propriedades claras e previsíveis",
+        "Pense em mobile e desktop",
+        "Clique em executar para visualizar"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "css",
+        "required": [
+          "position: sticky",
+          "top",
+          "z-index"
+        ]
+      }
+    },
+    {
+      "id": 85,
+      "title": "Contador de Vogais em JavaScript",
+      "difficulty": "complex",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para contar vogais em uma string. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "contarVogais(\"desenvolvimento\")",
+      "outputExample": "6",
+      "starterCode": "function contarVogais() {\n  // Implemente: contar vogais em uma string\n}",
+      "testCases": [
+        {
+          "input": "contarVogais(\"desenvolvimento\")",
+          "expected": "6"
+        },
+        {
+          "input": "contarVogais(\"xyz\")",
+          "expected": "0"
+        }
+      ],
+      "hints": [
+        "Normalize para minúsculas",
+        "Verifique se cada caractere está em aeiou"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 86,
+      "title": "Palíndromo em TypeScript",
+      "difficulty": "complex",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para verificar se uma string lida igual de trás para frente. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "isPalindromo(\"radar\")",
+      "outputExample": "true",
+      "starterCode": "export function isPalindromo(entrada: unknown): unknown {\n  // Implemente: verificar se uma string lida igual de trás para frente\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Normalize a string",
+        "Compare com a versão invertida"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 87,
+      "title": "Fatorial em C++",
+      "difficulty": "complex",
+      "language": "cpp",
+      "description": "Resolva um exercício de C++ para calcular o fatorial de um número. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "fatorial(5)",
+      "outputExample": "120",
+      "starterCode": "#include <bits/stdc++.h>\nusing namespace std;\n\n// Implemente uma função para calcular o fatorial de um número.\nint main() {\n  return 0;\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 88,
+      "title": "Busca Binária em C#",
+      "difficulty": "complex",
+      "language": "csharp",
+      "description": "Resolva um exercício de C# para buscar um valor em array ordenado. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "buscaBinaria([1,3,5,7], 5)",
+      "outputExample": "2",
+      "starterCode": "using System;\nusing System.Collections.Generic;\n\npublic class Solution {\n  // Implemente um método para buscar um valor em array ordenado.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 89,
+      "title": "Agrupar por Chave em Java",
+      "difficulty": "complex",
+      "language": "java",
+      "description": "Resolva um exercício de Java para agrupar objetos por uma propriedade. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(agruparPor([{tipo:\"a\"},{tipo:\"b\"},{tipo:\"a\"}], \"tipo\"))",
+      "outputExample": "{\"a\":[{\"tipo\":\"a\"},{\"tipo\":\"a\"}],\"b\":[{\"tipo\":\"b\"}]}",
+      "starterCode": "import java.util.*;\n\npublic class Solution {\n  // Implemente um método para agrupar objetos por uma propriedade.\n}",
+      "testCases": [],
+      "hints": [
+        "Escreva uma solução completa e legível",
+        "Use estruturas idiomáticas da linguagem",
+        "Este desafio usa validação estática no navegador"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "return",
+          "class|int main|public"
+        ]
+      }
+    },
+    {
+      "id": 90,
+      "title": "Cache LRU Simplificado em JavaScript",
+      "difficulty": "complex",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para simular uma política de cache com limite. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(lru([\"A\",\"B\",\"A\",\"C\"], 2))",
+      "outputExample": "[\"A\",\"C\"]",
+      "starterCode": "function lru() {\n  // Implemente: simular uma política de cache com limite\n}",
+      "testCases": [
+        {
+          "input": "JSON.stringify(lru([\"A\",\"B\",\"A\",\"C\"], 2))",
+          "expected": "[\"A\",\"C\"]"
+        }
+      ],
+      "hints": [
+        "Ao acessar um item, mova-o para o final",
+        "Remova o mais antigo quando passar do limite"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 91,
+      "title": "Olá, Mundo Dev em TypeScript",
+      "difficulty": "complex",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para retornar uma string fixa. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "hello()",
+      "outputExample": "\"Hello, World!\"",
+      "starterCode": "export function hello(entrada: unknown): unknown {\n  // Implemente: retornar uma string fixa\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Use return",
+        "Strings podem usar aspas simples ou duplas"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 92,
+      "title": "Soma Dois Números em JavaScript",
+      "difficulty": "complex",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para somar dois argumentos numéricos. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "soma(5, 3)",
+      "outputExample": "8",
+      "starterCode": "function soma() {\n  // Implemente: somar dois argumentos numéricos\n}",
+      "testCases": [
+        {
+          "input": "soma(5, 3)",
+          "expected": "8"
+        },
+        {
+          "input": "soma(-2, 7)",
+          "expected": "5"
+        }
+      ],
+      "hints": [
+        "Use o operador +",
+        "Retorne o resultado"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 93,
+      "title": "Par ou Ímpar em TypeScript",
+      "difficulty": "complex",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para identificar se um número é par ou ímpar. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "parOuImpar(7)",
+      "outputExample": "\"impar\"",
+      "starterCode": "export function parOuImpar(entrada: unknown): unknown {\n  // Implemente: identificar se um número é par ou ímpar\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Use o operador %",
+        "n % 2 === 0 indica número par"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "title": "Maior Número em JavaScript",
+      "difficulty": "complex",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para retornar o maior valor de uma lista. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "maiorNumero([2, 9, 4])",
+      "outputExample": "9",
+      "starterCode": "function maiorNumero() {\n  // Implemente: retornar o maior valor de uma lista\n}",
+      "testCases": [
+        {
+          "input": "maiorNumero([2, 9, 4])",
+          "expected": "9"
+        },
+        {
+          "input": "maiorNumero([-5, -1, -9])",
+          "expected": "-1"
+        }
+      ],
+      "hints": [
+        "Percorra o array",
+        "Compare cada item com o maior atual"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 95,
+      "title": "Contador de Vogais em TypeScript",
+      "difficulty": "complex",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para contar vogais em uma string. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "contarVogais(\"desenvolvimento\")",
+      "outputExample": "6",
+      "starterCode": "export function contarVogais(entrada: unknown): unknown {\n  // Implemente: contar vogais em uma string\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Normalize para minúsculas",
+        "Verifique se cada caractere está em aeiou"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 96,
+      "title": "Palíndromo em JavaScript",
+      "difficulty": "complex",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para verificar se uma string lida igual de trás para frente. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "isPalindromo(\"radar\")",
+      "outputExample": "true",
+      "starterCode": "function isPalindromo() {\n  // Implemente: verificar se uma string lida igual de trás para frente\n}",
+      "testCases": [
+        {
+          "input": "isPalindromo(\"radar\")",
+          "expected": "true"
+        },
+        {
+          "input": "isPalindromo(\"codigo\")",
+          "expected": "false"
+        }
+      ],
+      "hints": [
+        "Normalize a string",
+        "Compare com a versão invertida"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 97,
+      "title": "Fatorial em TypeScript",
+      "difficulty": "complex",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para calcular o fatorial de um número. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "fatorial(5)",
+      "outputExample": "120",
+      "starterCode": "export function fatorial(entrada: unknown): unknown {\n  // Implemente: calcular o fatorial de um número\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "0! é 1",
+        "Pode ser feito com loop ou recursão"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 98,
+      "title": "Busca Binária em JavaScript",
+      "difficulty": "complex",
+      "language": "javascript",
+      "description": "Resolva um exercício de JavaScript para buscar um valor em array ordenado. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "buscaBinaria([1,3,5,7], 5)",
+      "outputExample": "2",
+      "starterCode": "function buscaBinaria() {\n  // Implemente: buscar um valor em array ordenado\n}",
+      "testCases": [
+        {
+          "input": "buscaBinaria([1,3,5,7], 5)",
+          "expected": "2"
+        },
+        {
+          "input": "buscaBinaria([1,3,5,7], 4)",
+          "expected": "-1"
+        }
+      ],
+      "hints": [
+        "Use left/right/mid",
+        "Reduza o intervalo a cada passo"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "runtime"
+      }
+    },
+    {
+      "id": 99,
+      "title": "Agrupar por Chave em TypeScript",
+      "difficulty": "complex",
+      "language": "typescript",
+      "description": "Resolva um exercício de TypeScript para agrupar objetos por uma propriedade. Foque em clareza, nomes bons e tratamento de casos simples.",
+      "inputExample": "JSON.stringify(agruparPor([{tipo:\"a\"},{tipo:\"b\"},{tipo:\"a\"}], \"tipo\"))",
+      "outputExample": "{\"a\":[{\"tipo\":\"a\"},{\"tipo\":\"a\"}],\"b\":[{\"tipo\":\"b\"}]}",
+      "starterCode": "export function agruparPor(entrada: unknown): unknown {\n  // Implemente: agrupar objetos por uma propriedade\n  return entrada;\n}",
+      "testCases": [],
+      "hints": [
+        "Use objeto acumulador",
+        "Crie o array quando a chave ainda não existir"
+      ],
+      "xp": 420,
+      "badge": null,
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "function|=>|export",
+          ":|interface|type"
+        ]
+      }
+    },
+    {
+      "id": 100,
+      "title": "Mestre Senior: Arquitetura de Plataforma de Estudos",
+      "difficulty": "senior",
+      "language": "typescript",
+      "description": "Desafio único do nível Mestre Senior: modele uma mini plataforma com usuários, desafios, submissões, ranking e validações. O objetivo é demonstrar arquitetura, tipagem e organização.",
+      "inputExample": "createPlatform().submit(\"carlos\", 1, \"solution\")",
+      "outputExample": "Estado consistente com ranking e histórico",
+      "starterCode": "type User = { username: string; xp: number };\ntype Challenge = { id: number; xp: number };\n\nexport function createPlatform() {\n  // Modele estado, submissões, ranking e validações.\n  return {};\n}\n",
+      "testCases": [],
+      "hints": [
+        "Separe entidades e operações",
+        "Use tipos explícitos",
+        "Evite estado global solto",
+        "Pense em casos de erro"
+      ],
+      "xp": 3000,
+      "badge": "🏆",
+      "createdBy": "carlos",
+      "validation": {
+        "mode": "static",
+        "required": [
+          "type|interface",
+          "function|class",
+          "submit",
+          "ranking|rank",
+          "Challenge",
+          "User"
+        ]
+      }
+    }
+  ],
+  "submissions": [
+    {
+      "id": 1778049281944,
+      "username": "carlos",
+      "challengeId": 1,
+      "status": "correct",
+      "time": "2026-05-06T06:34:41.944Z",
+      "codeLength": 68
+    },
+    {
+      "id": 1778044733612,
+      "username": "carlos",
+      "challengeId": 1,
+      "status": "correct",
+      "time": "2026-05-06T05:18:53.612Z",
+      "codeLength": 68
+    },
+    {
+      "id": 1778044703427,
+      "username": "carlos",
+      "challengeId": 1,
+      "status": "wrong",
+      "time": "2026-05-06T05:18:23.427Z",
+      "codeLength": 69
+    }
+  ],
+  "logs": [
+    {
+      "id": 1778049282007,
+      "time": "2026-05-06T06:34:42.007Z",
+      "level": "info",
+      "msg": "Submissão: carlos → \"Olá, Mundo Dev em JavaScript\" → CORRECT"
+    },
+    {
+      "id": 1778049232453,
+      "time": "2026-05-06T06:33:52.453Z",
+      "level": "info",
+      "msg": "Desafio aberto: \"Olá, Mundo Dev em JavaScript\" por carlos"
+    },
+    {
+      "id": 1778049201600,
+      "time": "2026-05-06T06:33:21.600Z",
+      "level": "info",
+      "msg": "Login: carlos"
+    },
+    {
+      "id": 1778045882730,
+      "time": "2026-05-06T05:38:02.730Z",
+      "level": "info",
+      "msg": "Catálogo de 100 desafios normalizado."
+    },
+    {
+      "id": 1778045709613,
+      "time": "2026-05-06T05:35:09.613Z",
+      "level": "info",
+      "msg": "Dashboard acessado: carlos"
+    },
+    {
+      "id": 1778045707419,
+      "time": "2026-05-06T05:35:07.419Z",
+      "level": "info",
+      "msg": "Dashboard acessado: carlos"
+    },
+    {
+      "id": 1778045618219,
+      "time": "2026-05-06T05:33:38.219Z",
+      "level": "info",
+      "msg": "Desafio aberto: \"Mestre Senior: Arquitetura de Plataforma de Estudos\" por carlos"
+    },
+    {
+      "id": 1778045608058,
+      "time": "2026-05-06T05:33:28.058Z",
+      "level": "info",
+      "msg": "Dashboard acessado: carlos"
+    },
+    {
+      "id": 1778045578341,
+      "time": "2026-05-06T05:32:58.341Z",
+      "level": "info",
+      "msg": "Desafio aberto: \"Mestre Senior: Arquitetura de Plataforma de Estudos\" por carlos"
+    },
+    {
+      "id": 1778045566498,
+      "time": "2026-05-06T05:32:46.498Z",
+      "level": "info",
+      "msg": "Dashboard acessado: carlos"
+    },
+    {
+      "id": 1778045473355,
+      "time": "2026-05-06T05:31:13.355Z",
+      "level": "info",
+      "msg": "Dashboard acessado: carlos"
+    },
+    {
+      "id": 1778045459928,
+      "time": "2026-05-06T05:30:59.928Z",
+      "level": "info",
+      "msg": "Painel admin acessado por: carlos"
+    },
+    {
+      "id": 1778045456596,
+      "time": "2026-05-06T05:30:56.596Z",
+      "level": "info",
+      "msg": "Dashboard acessado: carlos"
+    },
+    {
+      "id": 1778045455316,
+      "time": "2026-05-06T05:30:55.316Z",
+      "level": "info",
+      "msg": "Dashboard acessado: carlos"
+    },
+    {
+      "id": 1778045454319,
+      "time": "2026-05-06T05:30:54.319Z",
+      "level": "info",
+      "msg": "Dashboard acessado: carlos"
+    },
+    {
+      "id": 1778045451456,
+      "time": "2026-05-06T05:30:51.456Z",
+      "level": "info",
+      "msg": "Dashboard acessado: carlos"
+    },
+    {
+      "id": 1778045436271,
+      "time": "2026-05-06T05:30:36.271Z",
+      "level": "info",
+      "msg": "Dashboard acessado: carlos"
+    },
+    {
+      "id": 1778045258815,
+      "time": "2026-05-06T05:27:38.815Z",
+      "level": "info",
+      "msg": "Desafio aberto: \"Soma Dois Números\" por carlos"
+    },
+    {
+      "id": 1778045255220,
+      "time": "2026-05-06T05:27:35.220Z",
+      "level": "info",
+      "msg": "Dashboard acessado: carlos"
+    },
+    {
+      "id": 1778045229054,
+      "time": "2026-05-06T05:27:09.054Z",
+      "level": "info",
+      "msg": "Dashboard acessado: carlos"
+    },
+    {
+      "id": 1778045222476,
+      "time": "2026-05-06T05:27:02.476Z",
+      "level": "info",
+      "msg": "Desafio aberto: \"Soma Dois Números\" por carlos"
+    },
+    {
+      "id": 1778044733742,
+      "time": "2026-05-06T05:18:53.742Z",
+      "level": "info",
+      "msg": "Submissão: carlos → \"Olá, Mundo Dev!\" → CORRETO"
+    },
+    {
+      "id": 1778044703481,
+      "time": "2026-05-06T05:18:23.481Z",
+      "level": "info",
+      "msg": "Submissão: carlos → \"Olá, Mundo Dev!\" → INCORRETO"
+    },
+    {
+      "id": 1778044692843,
+      "time": "2026-05-06T05:18:12.843Z",
+      "level": "info",
+      "msg": "Submissão: carlos → \"Olá, Mundo Dev!\" → INCORRETO"
+    },
+    {
+      "id": 1778044692809,
+      "time": "2026-05-06T05:18:12.809Z",
+      "level": "info",
+      "msg": "Base JSON inicializada."
+    }
+  ],
+  "siteConfig": {
+    "primaryColor": "#00ff00",
+    "secondaryColor": "#00ffff",
+    "bgColor": "#000000",
+    "accentColor": "#ff0040",
+    "bootMessage": "AMBIENTE PRONTO. BEM-VINDO AO HACKCODE.",
+    "matrixEffect": true,
+    "scanlinesEffect": true,
+    "glitchEffect": true,
+    "soundEffect": false
+  }
+}
